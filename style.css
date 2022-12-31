@@ -17,8 +17,13 @@ section {
     background-color: rgb(245, 245, 245);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding: 50px 0;
+    width: 100%;
 }
 
 .row {
@@ -63,6 +68,18 @@ button {
 
 .click:active {
     transform: scale(0.8);
+}
+
+.link__hover-effect {
+    position: relative;
+}
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    background-color: black;
 }
 
 /* NAVIGATION */
@@ -265,4 +282,41 @@ nav {
 
 .project__description--para {
     margin: 16px 0;
+}
+
+
+.project {
+    margin: 80px 40px;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #242424;
+    display: flex;
+    padding: 6% 0;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo--img {
+    width: 70px;
+}
+
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: 28px 0;
+}
+
+.footer__social--link,
+.footer__copyright {
+    color: white;
 }
