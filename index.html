@@ -7,8 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasparas Murėnas</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="app.js"></script>
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ypB9pk0bi0FthI-QX");
+        })();
+    </script>
 </head>
 
 <body>
@@ -77,6 +84,102 @@
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+        <div class="module">
+            <div class="module__half module__about">
+                <h3 class="module__title module__title--about">Here's a bit about me.</h3>
+                <h4 class="module__sub-title module__sub-title--about">Front End Engineer</h4>
+                <p class="module__para">
+                    I'm a <b class="text__yellow">Freshly New Software Engineer</b> with a strong
+                    passion for this new hobby.
+                    <br>
+                    Currently I'm looking for part-time job to gain <span class="text__yellow">experience</span>
+                </p>
+                <div class="module__languages">
+                    <figure class="modal__languages">
+                        <img class="img__languages"
+                            src="./assets/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5.1239039415247355954845.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__languages">
+                        <img class="img__languages"
+                            src="./assets/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5.1239039415247355954845.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__languages">
+                        <img class="img__languages"
+                            src="./assets/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5.1239039415247355954845.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__languages">
+                        <img class="img__languages"
+                            src="./assets/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5.1239039415247355954845.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__languages">
+                        <img class="img__languages"
+                            src="./assets/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5.1239039415247355954845.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__languages">
+                        <img class="img__languages"
+                            src="./assets/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5.1239039415247355954845.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__languages">
+                        <img class="img__languages"
+                            src="./assets/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5.1239039415247355954845.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__languages">
+                        <img class="img__languages"
+                            src="./assets/kisspng-web-development-html-responsive-web-design-cascadi-5ae19e6b7649d5.1239039415247355954845.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="module__half module__contact">
+                <h3 class="module__title module__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h3 class="module__sub-title module__sub-title--contact">
+                    I'm currently open to a new opportunities
+                </h3>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text"></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email"></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text"></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way
+                    </button>
+                </form>
+                <div class="module__overlay module__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="module__overlay module__overlay--success">
+                    Thanks for the message
+                </div>
+            </div>
+            <i class="fas fa-times module__exit click">
+
+            </i>
+        </div>
     </section>
     <section id="projects">
         <div class="container">
@@ -179,29 +282,29 @@
                 <div class="footer__social--list">
                     <a href="#" class="
                 footer__social--link
-                liver__hover-effect
-                liver__hover-effect--white
+                link__hover-effect
+                link__hover-effect--white
                 ">
                         GitHub
                     </a>
                     <a href="#" class="
                 footer__social--link
-                liver__hover-effect
-                liver__hover-effect--white
+                link__hover-effect
+                link__hover-effect--white
                 ">
                         LinkedIn
                     </a>
                     <a href="#" class="
                 footer__social--link
-                liver__hover-effect
-                liver__hover-effect--white
+                link__hover-effect
+                link__hover-effect--white
                 ">
                         Email
                     </a>
                     <a href="#" class="
                 footer__social--link
-                liver__hover-effect
-                liver__hover-effect--white
+                link__hover-effect
+                link__hover-effect--white
                 ">
                         Resume
                     </a>
